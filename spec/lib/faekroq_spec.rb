@@ -35,13 +35,23 @@ describe FaekRoq do
     FaekRoq.decrypt.should == 'foobar'
   end
 
-  xit 'gets its encrypted password from a file' do
-  end
+  describe 'file persistence' do
+    before :each do
+      File.delete('.roq')
+    end
+    it 'gets its encrypted password from a file' do
+      FaekRoq.password = 'goose27'
+      File.open('.roq', 'w') { |fh| fh.write FaekRoq.encrypted }
+      FaekRoq.password = 'goose29'
+      FaekRoq.read_from_file '.roq'
+      FaekRoq.password.should == 'goose27'
+    end
 
-  xit 'can use a key file' do
-  end
+    xit 'can use a key file' do
+    end
 
-  xit 'prompts to create a encrypted password file if none is found' do
+    xit 'prompts to create a encrypted password file if none is found' do
+    end
   end
 
 end

@@ -35,5 +35,9 @@ module FaekRoq
       @@crypter ||= Crypt::Rijndael.new(KEY)
     end
 
+    def read_from_file(password_file='./.roq')
+      @@encrypted = File.read(password_file)
+    end
+
   end
 end
