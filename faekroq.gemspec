@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency 'crypt', '>= 1.1.4' if RUBY_VERSION == '1.8.7'
+  s.add_dependency 'crypt', '>= 1.1.4' if RUBY_VERSION =~ /^1\.8\./
   s.add_dependency 'crypt19', '>= 1.2.1' if RUBY_VERSION == '1.9.2'
 
   s.add_development_dependency 'rspec', '>= 2.6.0'
