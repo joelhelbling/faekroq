@@ -23,6 +23,15 @@ a vest woven from pure tissue paper (1 ply).  So again, use
 this carefully and at your own risk.  No warranties express
 or implied.
 
+Tested (and Known To Be Working) On...
+======================================
+
+  * 1.9.2
+  * 1.8.7
+  * 1.8.6
+  * rbx
+  * jruby 1.6.1, 1.6.3
+
 An Haphazard Backlog
 ====================
 
@@ -32,4 +41,3 @@ Faekroq is not ready to use yet.  First we need:
   * read/write encrypted password from the current (project) directory
   * what if we want more than one encrypted password?  What then?
   * your choice of either weathered granite or sunset sandstone
-

@@ -3,3 +3,5 @@
 .roq
 Gemfile.lock
 pkg/*
+
+*.rbc
