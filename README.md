@@ -32,6 +32,11 @@ Tested (and Known To Be Working) On...
   * rbx
   * jruby 1.6.1, 1.6.3
 
+I tried running this with _MacRuby_, and had trouble even running 
+RSpec.  Further, when I tested FaekRoq in irb, it flat out doesn't 
+work; it's a problem with the crypt19 gem.  I get a different
+encrypted string each time .encrypt_string is called.  
+
 An Haphazard Backlog
 ====================
 
