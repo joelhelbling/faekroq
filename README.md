@@ -27,6 +27,7 @@ An Haphazard Backlog
 ====================
 
 Faekroq is not ready to use yet.  First we need:
+
   * read/write encrypted password from a default file
   * read/write key to a default file
   * read/write encrypted password from the current (project) directory
